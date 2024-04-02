@@ -1,0 +1,30 @@
+<!-- docs/_sidebar.md -->
+
+- **Home**
+    - [Introduction](/#cybermod)
+    - [Key features](/#key-features)
+- **Get Started**
+    - [Installation](/get-started/installation.md)
+    - [Initializing cybermod](/get-started/initialization.md)
+    - [Configuration](/get-started/configuration.md)
+    - [Examples](/get-started/examples.md)
+- **API Reference**
+    - [cybermod](/cybermod/index)
+        - [cybermod.config](/cybermod/config/index)
+        - cybermod.listen
+            - [Client](/cybermod/listen/client)
+            - [Message](/cybermod/listen/message)
+            - [User](/cybermod/listen/user)
+            - [Chat](/cybermod/listen/chat)
+        - cybermod.exceptions
+            - [ListenerTimeout](/cybermod/exceptions/listener-timeout)
+            - [ListenerStopped](/cybermod/exceptions/listener-stopped)
+        - [cybermod.helpers](/cybermod/helpers/index)
+        - cybermod.types
+            - [Identifier](/cybermod/types/identifier)
+            - [ListenerTypes](/cybermod/types/listener-types)
+            - [Listener](/cybermod/types/listener)
+        - cybermod.utils
+            - [cybermod.utils.patch](/cybermod/utils/patch)
+        - cybermod.nav
+            - [Pagination](/cybermod/nav/pagination)
