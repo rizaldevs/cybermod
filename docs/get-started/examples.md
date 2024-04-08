@@ -31,7 +31,7 @@ except ListenerTimeout:
 
 ```python
 from cybermod import Client, Message
-from pyrogram import filters
+from cybergram import filters
 
 
 @Client.on_message(filters.command('form'))

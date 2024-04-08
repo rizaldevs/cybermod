@@ -1,8 +1,8 @@
 ### *class* cybermod.listen.Message
 
-Bases: `pyrogram.Message`
+Bases: `cybergram.Message`
 
-The `cybermod.listen.Message` class is an extension of the `pyrogram.Message` class. It provides additional methods for waiting
+The `cybermod.listen.Message` class is an extension of the `cybergram.Message` class. It provides additional methods for waiting
 for user clicks on inline buttons within messages.
 
 ### *async* wait_for_click(from_user_id: int | None = None, timeout: int | None = None, filters: Filter | None = None,
@@ -18,7 +18,7 @@ call `Client.listen` with `ListenerTypes.CALLBACK_QUERY` as the `listener_type`.
   from any user.
 * **timeout** (*int* *or* *None*) – The maximum amount of time to wait for a button click. If `None`, there is no
   timeout.
-* **filters** (*pyrogram.filters.Filter* *or* *None*) – A filter to check the incoming click event against. Can be used
+* **filters** (*cybergram.filters.Filter* *or* *None*) – A filter to check the incoming click event against. Can be used
   to filter clicks by the button data.
 * **alert** (*str* *or* *bool*) – The alert text to show to users whose ID does not match `from_user_id`. If `True`, the
   default alert text is shown. If `False`, no alert is shown.

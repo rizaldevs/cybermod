@@ -2,7 +2,7 @@ from asyncio import Future
 from dataclasses import dataclass
 from typing import Callable
 
-from pyrogram.filters import Filter
+from cybergram.filters import Filter
 
 from .identifier import Identifier
 from .listener_types import ListenerTypes

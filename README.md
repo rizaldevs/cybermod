@@ -5,15 +5,15 @@
 [![Downloads](https://static.pepy.tech/badge/cybermod)](https://pepy.tech/project/cybermod)
 [![Downloads](https://static.pepy.tech/badge/cybermod/month)](https://pepy.tech/project/cybermod)
 
-cybermod is a versatile Python add-on for the Pyrogram library, designed to make developing Telegram bots faster and more
+cybermod is a versatile Python add-on for the cybergram library, designed to make developing Telegram bots faster and more
 efficient.
 
-It's based on **monkeypatching**, which means it works together with Pyrogram, rather than being a fork or modified
+It's based on **monkeypatching**, which means it works together with cybergram, rather than being a fork or modified
 version. It
-adds features to Pyrogram classes on the go, so you don't need to update it every time Pyrogram is updated.
+adds features to cybergram classes on the go, so you don't need to update it every time cybergram is updated.
 
 Whether you're building a simple chatbot or a complex form to get multiple responses from the user, cybermod has you
-covered. It enhances Pyrogram with a range
+covered. It enhances cybergram with a range
 of advanced features, simplifies conversation handling, and offers a high degree of customizability.
 
 ## Documentation
@@ -75,7 +75,7 @@ except ListenerTimeout:
 
 ```python
 from cybermod import Client, Message
-from pyrogram import filters
+from cybergram import filters
 
 
 @Client.on_message(filters.command('form'))
@@ -122,16 +122,16 @@ rye add cybermod
 ## Initialization
 
 To initialize cybermod, on the file that creates the client instance, simply import the Client class from cybermod instead
-of pyrogram:
+of cybergram:
 
 ```python
 from cybermod import Client
 ```
 
-And that's all! You can still use the `Client` class as you would normally do with Pyrogram, but now having all the
+And that's all! You can still use the `Client` class as you would normally do with cybergram, but now having all the
 extra features.
 
-You don't need to change the imports on the plugins files. Even by importing `Client` from pyrogram, the cybermod
+You don't need to change the imports on the plugins files. Even by importing `Client` from cybergram, the cybermod
 features will be available anyway. In order to monkeyatch cybermod features successfully, it's just required that the
 first `Client` class imported to your project code should be from cybermod. Then all the other future `Client` instances
 will be patched automatically.
@@ -148,9 +148,9 @@ or contribute in any way that aligns with our goals.
 
 ### Copyright & License
 
-This project may include snippets of Pyrogram code
+This project may include snippets of cybergram code
 
-- Pyrogram - Telegram MTProto API Client Library for Python. Copyright (C) 2017-2023
+- cybergram - Telegram MTProto API Client Library for Python. Copyright (C) 2017-2023
   Dan <<https://github.com/delivrance>>
 
 Licensed under the terms of the [GNU Lesser General Public License v3 or later (LGPLv3+)](COPYING.lesser)

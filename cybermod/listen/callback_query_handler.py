@@ -1,9 +1,9 @@
 from inspect import iscoroutinefunction
 from typing import Callable, Tuple
 
-import pyrogram
-from pyrogram.filters import Filter
-from pyrogram.types import CallbackQuery
+import cybergram
+from cybergram.filters import Filter
+from cybergram.types import CallbackQuery
 
 from .client import Client
 from ..config import config
@@ -11,9 +11,9 @@ from ..types import ListenerTypes, Identifier, Listener
 from ..utils import patch_into, should_patch
 
 
-@patch_into(pyrogram.handlers.callback_query_handler.CallbackQueryHandler)
+@patch_into(cybergram.handlers.callback_query_handler.CallbackQueryHandler)
 class CallbackQueryHandler(
-    pyrogram.handlers.callback_query_handler.CallbackQueryHandler
+    cybergram.handlers.callback_query_handler.CallbackQueryHandler
 ):
     old__init__: Callable
 
@@ -132,14 +132,14 @@ class CallbackQueryHandler(
             if listener.future and not listener.future.done():
                 listener.future.set_result(query)
 
-                raise pyrogram.StopPropagation
+                raise cybergram.StopPropagation
             elif listener.callback:
                 if iscoroutinefunction(listener.callback):
                     await listener.callback(client, query, *args)
                 else:
                     listener.callback(client, query, *args)
 
-                raise pyrogram.StopPropagation
+                raise cybergram.StopPropagation
             else:
                 raise ValueError("Listener must have either a future or a callback")
         else:

@@ -1,14 +1,14 @@
 from typing import Optional, Union, List
 
-import pyrogram
+import cybergram
 
 from .client import Client
 from ..types import ListenerTypes
 from ..utils import patch_into, should_patch
 
 
-@patch_into(pyrogram.types.messages_and_media.message.Message)
-class Message(pyrogram.types.messages_and_media.message.Message):
+@patch_into(cybergram.types.messages_and_media.message.Message)
+class Message(cybergram.types.messages_and_media.message.Message):
     _client = Client
 
     @should_patch()

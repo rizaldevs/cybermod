@@ -1,5 +1,5 @@
 """
-cybermod - A monkeypatcher add-on for Pyrogram
+cybermod - A monkeypatcher add-on for cybergram
 Copyright (C) 2020 Cezar H. <https://github.com/rizaldevs>
 
 This file is part of cybermod.
@@ -21,7 +21,7 @@ from contextlib import contextmanager, asynccontextmanager
 from inspect import iscoroutinefunction
 from typing import Callable, T, Type
 
-from pyrogram.sync import async_to_sync
+from cybergram.sync import async_to_sync
 
 
 def patch_into(target_class):

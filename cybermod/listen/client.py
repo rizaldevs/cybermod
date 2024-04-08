@@ -2,8 +2,8 @@ import asyncio
 from inspect import iscoroutinefunction
 from typing import Optional, Callable, Dict, List, Union
 
-import pyrogram
-from pyrogram.filters import Filter
+import cybergram
+from cybergram.filters import Filter
 
 from ..config import config
 from ..exceptions import ListenerTimeout, ListenerStopped
@@ -16,8 +16,8 @@ if not config.disable_startup_logs:
     )
 
 
-@patch_into(pyrogram.client.Client)
-class Client(pyrogram.client.Client):
+@patch_into(cybergram.client.Client)
+class Client(cybergram.client.Client):
     listeners: Dict[ListenerTypes, List[Listener]]
     old__init__: Callable
 

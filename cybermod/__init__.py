@@ -1,5 +1,5 @@
 """
-cybermod - A monkeypatched add-on for Pyrogram
+cybermod - A monkeypatched add-on for cybergram
 Copyright (C) 2020 Cezar H. <https://github.com/rizaldevs>
 
 This file is part of cybermod.

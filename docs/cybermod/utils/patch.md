@@ -1,11 +1,11 @@
 ### *function* cybermod.utils.patch_into(target_class)
 
-The `cybermod.utils.patch_into` decorator is a function used to facilitate monkeypatching of pyrogram classes with custom
+The `cybermod.utils.patch_into` decorator is a function used to facilitate monkeypatching of cybergram classes with custom
 methods from cybermod.
 
 ### *Parameters:*
 
-- **target_class** (*Type*) - The target class or Pyrogram class to which you want to apply the patch.
+- **target_class** (*Type*) - The target class or cybergram class to which you want to apply the patch.
 
 ### *Returns:*
 
