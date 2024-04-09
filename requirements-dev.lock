@@ -13,7 +13,7 @@ markupsafe==2.1.3
 pdoc==14.1.0
 pyaes==1.6.1
 pygments==2.16.1
-pyrogram==2.0.106
+cybergram
 pysocks==1.7.1
 six==1.16.0
 wheel==0.41.3
