@@ -1,6 +1,6 @@
-### *enum* pyromod.types.ListenerTypes
+### *enum* cybermod.types.ListenerTypes
 
-The `pyromod.types.ListenerTypes` enum defines the various types of listeners that you can use in pyromod.
+The `cybermod.types.ListenerTypes` enum defines the various types of listeners that you can use in cybermod.
 
 ### *Member Values:*
 

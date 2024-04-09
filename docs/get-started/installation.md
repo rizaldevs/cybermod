@@ -1,21 +1,21 @@
 ## Installation
 
-To get started with pyromod, you can install it using pip:
+To get started with cybermod, you can install it using pip:
 
 ```bash
-pip install pyromod
+pip install cybermod
 ```
 
 Or poetry:
 
 ```bash
-poetry add pyromod
+poetry add cybermod
 ```
 
 Or rye:
 
 ```bash
-rye add pyromod
+rye add cybermod
 ```
 
-!> pyromod requires pyrogram to be installed, since it's a plugin that only does monkeypatching, rather than a standalone fork of pyrogram.
+!> cybermod requires pyrogram to be installed, since it's a plugin that only does monkeypatching, rather than a standalone fork of pyrogram.

@@ -1,4 +1,4 @@
-### *object* pyromod.config
+### *object* cybermod.config
 
 The `config` object in Pyromod is a `SimpleNamespace` object that stores configuration settings for your Pyromod-powered
 bot. These settings allow you to customize the behavior of your bot according to your specific needs.
@@ -16,7 +16,7 @@ bot. These settings allow you to customize the behavior of your bot according to
 Here's an example of how to configure Pyromod using the `config` object:
 
 ```python
-from pyromod.config import config
+from cybermod.config import config
 
 # Set a custom timeout handler function
 config.timeout_handler = my_custom_timeout_handler

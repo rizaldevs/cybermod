@@ -1,9 +1,9 @@
-### *class* pyromod.listen.User
+### *class* cybermod.listen.User
 
 Bases: `pyrogram.types.user_and_chats.user.User`
 
-The `pyromod.listen.User` class is an extension of the `pyrogram.types.user_and_chats.user.User` class. It provides additional
-methods for working with User objects with pyromod.
+The `cybermod.listen.User` class is an extension of the `pyrogram.types.user_and_chats.user.User` class. It provides additional
+methods for working with User objects with cybermod.
 
 ### *bound method* listen(*args, **kwargs):
 

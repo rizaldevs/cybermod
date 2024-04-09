@@ -1,6 +1,6 @@
-### *class* pyromod.nav.Pagination
+### *class* cybermod.nav.Pagination
 
-The `pyromod.nav.Pagination` class provides a utility for creating paginated interfaces with customizable pagination
+The `cybermod.nav.Pagination` class provides a utility for creating paginated interfaces with customizable pagination
 controls. It is designed to handle a list of objects and display them in a paginated manner.
 
 ### *Parameters:*

@@ -12,7 +12,7 @@ from ..utils import should_patch, patch_into
 
 if not config.disable_startup_logs:
     print(
-        "Pyromod is working! If you like pyromod, please star it at https://github.com/usernein/pyromod"
+        "Pyromod is working! If you like cybermod, please star it at https://github.com/usernein/cybermod"
     )
 
 

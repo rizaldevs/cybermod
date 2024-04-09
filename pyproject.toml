@@ -1,5 +1,5 @@
 [project]
-name = "pyromod"
+name = "cybermod"
 version = "3.1.6"
 description = "A monkeypatcher add-on for Pyrogram that does conversation handling"
 authors = [

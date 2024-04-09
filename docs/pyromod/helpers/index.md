@@ -1,4 +1,4 @@
-###  *function* pyromod.array_chunk(input_array, size)
+###  *function* cybermod.array_chunk(input_array, size)
 
 Split an array into chunks.
 
@@ -8,7 +8,7 @@ Split an array into chunks.
 * **Returns:**
   A list of chunks.
 
-###  *function* pyromod.bki(keyboard)
+###  *function* cybermod.bki(keyboard)
 
 Deserialize an InlineKeyboardMarkup to a list of lists of buttons.
 
@@ -17,7 +17,7 @@ Deserialize an InlineKeyboardMarkup to a list of lists of buttons.
 * **Returns:**
   A list of lists of buttons.
 
-###  *function* pyromod.btn(text, value, type='callback_data')
+###  *function* cybermod.btn(text, value, type='callback_data')
 
 Create an InlineKeyboardButton.
 
@@ -28,7 +28,7 @@ Create an InlineKeyboardButton.
 * **Returns:**
   An InlineKeyboardButton.
 
-###  *function* pyromod.force_reply(selective=True)
+###  *function* cybermod.force_reply(selective=True)
 
 Create a ForceReply.
 
@@ -37,7 +37,7 @@ Create a ForceReply.
 * **Returns:**
   A ForceReply.
 
-###  *function* pyromod.ikb(rows=None)
+###  *function* cybermod.ikb(rows=None)
 
 Create an InlineKeyboardMarkup from a list of lists of buttons.
 
@@ -46,7 +46,7 @@ Create an InlineKeyboardMarkup from a list of lists of buttons.
 * **Returns:**
   An InlineKeyboardMarkup.
 
-###  *function* pyromod.kb(rows=None, \*\*kwargs)
+###  *function* cybermod.kb(rows=None, \*\*kwargs)
 
 Create a ReplyKeyboardMarkup from a list of lists of buttons.
 
@@ -56,11 +56,11 @@ Create a ReplyKeyboardMarkup from a list of lists of buttons.
 * **Returns:**
   A ReplyKeyboardMarkup.
 
-###  *function* pyromod.kbtn
+###  *function* cybermod.kbtn
 
 alias of `KeyboardButton`
 
-###  *function* pyromod.ntb(button)
+###  *function* cybermod.ntb(button)
 
 Deserialize an InlineKeyboardButton to btn() format.
 

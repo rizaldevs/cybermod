@@ -1,6 +1,6 @@
-### *class* pyromod.types.Identifier
+### *class* cybermod.types.Identifier
 
-The `pyromod.types.Identifier` class is a dataclass that serves as a utility for matching listeners to the data of updates.
+The `cybermod.types.Identifier` class is a dataclass that serves as a utility for matching listeners to the data of updates.
 
 ### *Parameters:*
 
@@ -15,7 +15,7 @@ Compares the `Identifier` with another `Identifier` instance to determine if the
 
 **Parameters:**
 
-- **other** (*pyromod.types.Identifier*) – The `Identifier` to compare against.
+- **other** (*cybermod.types.Identifier*) – The `Identifier` to compare against.
 
 **Returns:**
 `True` if the two `Identifier` instances match, meaning that for each property in `other`,

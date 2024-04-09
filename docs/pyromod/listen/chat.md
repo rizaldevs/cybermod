@@ -1,9 +1,9 @@
-### *class* pyromod.listen.Chat
+### *class* cybermod.listen.Chat
 
 Bases: `pyrogram.types.user_and_chats.chat.Chat`
 
-The `pyromod.listen.Chat` class is an extension of the `pyrogram.types.user_and_chats.chat.Chat` class. It provides additional
-methods for working with chats with pyromod.
+The `cybermod.listen.Chat` class is an extension of the `pyrogram.types.user_and_chats.chat.Chat` class. It provides additional
+methods for working with chats with cybermod.
 
 ### *bound method* listen(*args, **kwargs):
 

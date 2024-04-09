@@ -1,4 +1,4 @@
-### *exception* pyromod.exceptions.ListenerStopped
+### *exception* cybermod.exceptions.ListenerStopped
 
 The `ListenerStopped` exception is raised in Pyromod when a listener is explicitly stopped (
 using `Client.stop_listening`) during bot execution. This
@@ -8,7 +8,7 @@ the `throw_exceptions` setting in the Pyromod `config` is set to `True`.
 * **Usage**
 
 ```python
-from pyromod.exceptions import ListenerStopped
+from cybermod.exceptions import ListenerStopped
 
 try:
     message = await Client.listen(...)
