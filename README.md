@@ -1,30 +1,30 @@
-# cybermod
+# pyromod
 
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/cybermodchat)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/rizaldevs/cybermod)
-[![Downloads](https://static.pepy.tech/badge/cybermod)](https://pepy.tech/project/cybermod)
-[![Downloads](https://static.pepy.tech/badge/cybermod/month)](https://pepy.tech/project/cybermod)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/pyromodchat)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/usernein/pyromod)
+[![Downloads](https://static.pepy.tech/badge/pyromod)](https://pepy.tech/project/pyromod)
+[![Downloads](https://static.pepy.tech/badge/pyromod/month)](https://pepy.tech/project/pyromod)
 
-cybermod is a versatile Python add-on for the cybergram library, designed to make developing Telegram bots faster and more
+pyromod is a versatile Python add-on for the Pyrogram library, designed to make developing Telegram bots faster and more
 efficient.
 
-It's based on **monkeypatching**, which means it works together with cybergram, rather than being a fork or modified
+It's based on **monkeypatching**, which means it works together with Pyrogram, rather than being a fork or modified
 version. It
-adds features to cybergram classes on the go, so you don't need to update it every time cybergram is updated.
+adds features to Pyrogram classes on the go, so you don't need to update it every time Pyrogram is updated.
 
-Whether you're building a simple chatbot or a complex form to get multiple responses from the user, cybermod has you
-covered. It enhances cybergram with a range
+Whether you're building a simple chatbot or a complex form to get multiple responses from the user, pyromod has you
+covered. It enhances Pyrogram with a range
 of advanced features, simplifies conversation handling, and offers a high degree of customizability.
 
 ## Documentation
 
-You can find the full documentation at [cybermod.pauxis.dev](https://cybermod.pauxis.dev).
+You can find the full documentation at [pyromod.pauxis.dev](https://pyromod.pauxis.dev).
 
-Also feel free to ask any cybermod-related questions on our [Telegram group](https://t.me/cybermodchat).
+Also feel free to ask any pyromod-related questions on our [Telegram group](https://t.me/pyromodchat).
 
 ## Key Features
 
-- **Effortless Bot Development:** cybermod streamlines the process of building conversational Telegram bots, saving you
+- **Effortless Bot Development:** pyromod streamlines the process of building conversational Telegram bots, saving you
   time and effort
   during development.
 
@@ -32,14 +32,14 @@ Also feel free to ask any cybermod-related questions on our [Telegram group](htt
   and interactive interactions much easier, without having to save states anywhere, by leveraging the power of
   async/await syntax.
 
-- **Effortless Inline Keyboards Creation:** Creating inline keyboards is easier than ever with cybermod's inline keyboard
+- **Effortless Inline Keyboards Creation:** Creating inline keyboards is easier than ever with pyromod's inline keyboard
   helper functions.
 
-- **User-Friendly Pagination:** Enhance the user experience by providing easy navigation tools with the cybermod's
+- **User-Friendly Pagination:** Enhance the user experience by providing easy navigation tools with the pyromod's
   pagination
   helpers.
 
-- **Highly Customizable:** cybermod's configuration options let you customize its behavior to meet your specific project
+- **Highly Customizable:** pyromod's configuration options let you customize its behavior to meet your specific project
   requirements.
 
 ## Examples
@@ -74,8 +74,8 @@ except ListenerTimeout:
 **Full handler example, getting user's name and age with bound method Chat.ask:**
 
 ```python
-from cybermod import Client, Message
-from cybergram import filters
+from pyromod import Client, Message
+from pyrogram import filters
 
 
 @Client.on_message(filters.command('form'))
@@ -91,66 +91,66 @@ async def on_form(client: Client, message: Message):
 **Easier inline keyboard creation:**
 
 ```python
-from cybermod.helpers import ikb
+from pyromod.helpers import ikb
 
 keyboard = ikb([
     [('Button 1', 'callback_data_1'), ('Button 2', 'callback_data_2')],
-    [('Another button', 't.me/cybermodchat', 'url')]
+    [('Another button', 't.me/pyromodchat', 'url')]
 ])
 ```
 
 ## Installation
 
-To get started with cybermod, you can install it using pip:
+To get started with pyromod, you can install it using pip:
 
 ```bash
-pip install cybermod
+pip install pyromod
 ```
 
 Or poetry:
 
 ```bash
-poetry add cybermod
+poetry add pyromod
 ```
 
 Or rye:
 
 ```bash
-rye add cybermod
+rye add pyromod
 ```
 
 ## Initialization
 
-To initialize cybermod, on the file that creates the client instance, simply import the Client class from cybermod instead
-of cybergram:
+To initialize pyromod, on the file that creates the client instance, simply import the Client class from pyromod instead
+of pyrogram:
 
 ```python
-from cybermod import Client
+from pyromod import Client
 ```
 
-And that's all! You can still use the `Client` class as you would normally do with cybergram, but now having all the
+And that's all! You can still use the `Client` class as you would normally do with Pyrogram, but now having all the
 extra features.
 
-You don't need to change the imports on the plugins files. Even by importing `Client` from cybergram, the cybermod
-features will be available anyway. In order to monkeyatch cybermod features successfully, it's just required that the
-first `Client` class imported to your project code should be from cybermod. Then all the other future `Client` instances
+You don't need to change the imports on the plugins files. Even by importing `Client` from pyrogram, the pyromod
+features will be available anyway. In order to monkeyatch pyromod features successfully, it's just required that the
+first `Client` class imported to your project code should be from pyromod. Then all the other future `Client` instances
 will be patched automatically.
 
-You just need to import from cybermod if you want your IDE to recognize and suggest
-the extra features based on `cybermod.Client` type.
+You just need to import from pyromod if you want your IDE to recognize and suggest
+the extra features based on `pyromod.Client` type.
 
 ## Contributing
 
-We welcome contributions from the community to make cybermod even better.
+We welcome contributions from the community to make pyromod even better.
 
 Feel free to open issues, submit pull requests,
 or contribute in any way that aligns with our goals.
 
 ### Copyright & License
 
-This project may include snippets of cybergram code
+This project may include snippets of Pyrogram code
 
-- cybergram - Telegram MTProto API Client Library for Python. Copyright (C) 2017-2023
+- Pyrogram - Telegram MTProto API Client Library for Python. Copyright (C) 2017-2023
   Dan <<https://github.com/delivrance>>
 
 Licensed under the terms of the [GNU Lesser General Public License v3 or later (LGPLv3+)](COPYING.lesser)

@@ -30,8 +30,8 @@ except ListenerTimeout:
 **Full handler example, getting user's name and age with bound method Chat.ask:**
 
 ```python
-from cybermod import Client, Message
-from cybergram import filters
+from pyromod import Client, Message
+from pyrogram import filters
 
 
 @Client.on_message(filters.command('form'))
@@ -47,10 +47,10 @@ async def on_form(client: Client, message: Message):
 **Easier inline keyboard creation:**
 
 ```python
-from cybermod.helpers import ikb
+from pyromod.helpers import ikb
 
 keyboard = ikb([
     [('Button 1', 'callback_data_1'), ('Button 2', 'callback_data_2')],
-    [('Another button', 't.me/cybermodchat', 'url')]
+    [('Another button', 't.me/pyromodchat', 'url')]
 ])
 ```
