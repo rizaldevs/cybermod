@@ -1,6 +1,6 @@
 ### *exception* cybermod.exceptions.ListenerTimeout
 
-The `ListenerTimeout` exception in Pyromod is raised when a listener waits for a specified duration but times out
+The `ListenerTimeout` exception in Cybermod is raised when a listener waits for a specified duration but times out
 without receiving the expected event. It is thrown only if the `config.throw_exceptions` attribute is set to `True`.
 
 * **Usage**

@@ -33,7 +33,7 @@ cybermod/
 │  └── pagination.py
 └── utils
     ├── __init__.py
-    └── utils.py (used to contain PyromodConfig and the functions patch and patchable)
+    └── utils.py (used to contain CybermodConfig and the functions patch and patchable)
 
 Now it has the following structure:
 cybermod/
