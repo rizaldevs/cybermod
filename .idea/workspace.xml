@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="94bd3463-5647-4b8f-9e99-c1f2cf75030a" name="Changes" comment="docs: add docstrings to client, chat, user, message and handlers">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements-dev.lock" beforeDir="false" afterPath="$PROJECT_DIR$/requirements-dev.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+    <option name="myAllFileTypesSelected" value="false" />
+    <option name="mySelectedFileTypes">
+      <set>
+        <option value="Cython" />
+        <option value="Python" />
+        <option value="PythonStub" />
+      </set>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+    <option name="myAllFileTypesSelected" value="false" />
+    <option name="mySelectedFileTypes">
+      <set>
+        <option value="Python" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2Wx2VaEqom48MyqtYDasxgROSXZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;docs/add-docstrings&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dev/workspace/personal/botbase&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/get-started" />
+      <recent name="$PROJECT_DIR$/docs/pyromod/listen" />
+      <recent name="$PROJECT_DIR$/pyromod/listen" />
+      <recent name="$PROJECT_DIR$/pyromod/types" />
+      <recent name="$PROJECT_DIR$/docs/pyromod/types" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94bd3463-5647-4b8f-9e99-c1f2cf75030a" name="Changes" comment="" />
+      <created>1697659934754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697659934754</updated>
+      <workItem from="1697659935821" duration="1039000" />
+      <workItem from="1697672275896" duration="2338000" />
+      <workItem from="1697735583824" duration="345000" />
+      <workItem from="1698113297720" duration="262000" />
+      <workItem from="1698438819382" duration="64936000" />
+      <workItem from="1698557187182" duration="13126000" />
+      <workItem from="1698717035116" duration="5846000" />
+      <workItem from="1698754734149" duration="10415000" />
+      <workItem from="1698960826194" duration="1604000" />
+      <workItem from="1699015713087" duration="2154000" />
+      <workItem from="1699019035866" duration="7616000" />
+      <workItem from="1699132999526" duration="82000" />
+      <workItem from="1699133094250" duration="599000" />
+      <workItem from="1699272874341" duration="104000" />
+      <workItem from="1699449872421" duration="4313000" />
+      <workItem from="1699487174837" duration="599000" />
+      <workItem from="1699537974969" duration="599000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: remove identifier of listen() and ask() in favor of new kwargs">
+      <option name="closed" value="true" />
+      <created>1697674013051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697674013051</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor: split classes into new files, extend from original classes">
+      <option name="closed" value="true" />
+      <created>1698458127470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698458127470</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor: rename patch -&gt; patch_into, patchable -&gt; should_patch">
+      <option name="closed" value="true" />
+      <created>1698458707481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698458707481</updated>
+    </task>
+    <task id="LOCAL-00004" summary="style: format with ruff">
+      <option name="closed" value="true" />
+      <created>1698459440691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698459440691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(precedence): return most specific listener">
+      <option name="closed" value="true" />
+      <created>1698501056000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698501056000</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor!: rename get_single_listener -&gt; get_matching_listener, get_many_listeners -&gt; get_many_matching_listeners">
+      <option name="closed" value="true" />
+      <created>1698501190739</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698501190739</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: improve variable names and only remove checking attribute from null listener">
+      <option name="closed" value="true" />
+      <created>1698501644460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698501644460</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactor: transform config.py into package pyromod.config">
+      <option name="closed" value="true" />
+      <created>1698532479321</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698532479321</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore!: remove handlers from pyromod exports">
+      <option name="closed" value="true" />
+      <created>1698532560560</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698532560560</updated>
+    </task>
+    <task id="LOCAL-00010" summary="docs: bring new docs with docsify">
+      <option name="closed" value="true" />
+      <created>1698532601106</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698532601106</updated>
+    </task>
+    <task id="LOCAL-00011" summary="docs: update README">
+      <option name="closed" value="true" />
+      <created>1698532610717</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698532610717</updated>
+    </task>
+    <task id="LOCAL-00012" summary="docs: add missing backtick">
+      <option name="closed" value="true" />
+      <created>1698533089367</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698533089367</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: fix order of positional args in bound method ask">
+      <option name="closed" value="true" />
+      <created>1698534890414</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698534890414</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor(ask)!: rename request to sent_message">
+      <option name="closed" value="true" />
+      <created>1698540484778</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698540484778</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(ask): send message only if text is not empty">
+      <option name="closed" value="true" />
+      <created>1698540593029</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698540593029</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor: search for message_id (pyrogram v1) if message.id is not found">
+      <option name="closed" value="true" />
+      <created>1698541222725</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698541222725</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor: only use query.message.chat.id if both message and chat are not null">
+      <option name="closed" value="true" />
+      <created>1698541445627</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698541445627</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: rename patch -&gt; patch_into">
+      <option name="closed" value="true" />
+      <created>1698545960528</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698545960528</updated>
+    </task>
+    <task id="LOCAL-00019" summary="style: format with ruff">
+      <option name="closed" value="true" />
+      <created>1698546004473</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1698546004473</updated>
+    </task>
+    <task id="LOCAL-00020" summary="chore: remaking many changes that got undone after the merge">
+      <option name="closed" value="true" />
+      <created>1698546742997</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698546742997</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix: replace @should_patch -&gt; @should_patch()">
+      <option name="closed" value="true" />
+      <created>1698546968182</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1698546968182</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix: use Dict and List from typing instead of builtin">
+      <option name="closed" value="true" />
+      <created>1698547262039</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1698547262039</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: use Tuple from typing instead of builtin">
+      <option name="closed" value="true" />
+      <created>1698552695773</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1698552695773</updated>
+    </task>
+    <task id="LOCAL-00024" summary="hotfix: use Tuple from typing instead of builtin">
+      <option name="closed" value="true" />
+      <created>1698552758032</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1698552758032</updated>
+    </task>
+    <task id="LOCAL-00025" summary="hotfix: removing logging in pyromod.utils.patch">
+      <option name="closed" value="true" />
+      <created>1698588714555</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1698588714555</updated>
+    </task>
+    <task id="LOCAL-00026" summary="hotfix: fix CallbackQueryHandler searching for Message listeners">
+      <option name="closed" value="true" />
+      <created>1698590501948</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698590501948</updated>
+    </task>
+    <task id="LOCAL-00027" summary="docs: mention site docs on readme">
+      <option name="closed" value="true" />
+      <created>1698590587284</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1698590587284</updated>
+    </task>
+    <task id="LOCAL-00028" summary="chore: bump version to 3.0.2">
+      <option name="closed" value="true" />
+      <created>1698590627214</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1698590627214</updated>
+    </task>
+    <task id="LOCAL-00029" summary="chore: kill poetry, use rye">
+      <option name="closed" value="true" />
+      <created>1698605747409</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1698605747409</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: implement register_next_step_handler with execution of the registered callback">
+      <option name="closed" value="true" />
+      <created>1698611327943</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1698611327943</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: accept lists as chat_id, user_id, message_id and inline_message_id on listen, ask and wait_for_click">
+      <option name="closed" value="true" />
+      <created>1698719356813</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1698719356813</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: accept usernames as chat_id and user_id on listen, ask and wait_for_click">
+      <option name="closed" value="true" />
+      <created>1698747821809</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698747821809</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat!: make stop_listening async and create stop_listener">
+      <option name="closed" value="true" />
+      <created>1698759913417</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1698759913417</updated>
+    </task>
+    <task id="LOCAL-00034" summary="docs: bump year on copyright">
+      <option name="closed" value="true" />
+      <created>1698760318342</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1698760318342</updated>
+    </task>
+    <task id="LOCAL-00035" summary="hotfix: fix syntax error">
+      <option name="closed" value="true" />
+      <created>1698761145875</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1698761145875</updated>
+    </task>
+    <task id="LOCAL-00036" summary="hotfix: fix login of lists in identifiers, fix call to remove_listener on future done">
+      <option name="closed" value="true" />
+      <created>1698763970373</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1698763970373</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat: add startup logs">
+      <option name="closed" value="true" />
+      <created>1698765340231</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1698765340232</updated>
+    </task>
+    <task id="LOCAL-00038" summary="docs: mention twice the telegram group in readme">
+      <option name="closed" value="true" />
+      <created>1698765772441</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1698765772441</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat: make register_next_step_handler support lists">
+      <option name="closed" value="true" />
+      <created>1698766778589</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1698766778589</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix: make pattern lead the match with the listeners in get_matching_listener and get_many_matching_listeners">
+      <option name="closed" value="true" />
+      <created>1698961067156</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1698961067156</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix: split logic of get_matching_listener into get_listener_matching_with_data and get_listener_matching_with_identifier_pattern">
+      <option name="closed" value="true" />
+      <created>1699020607688</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1699020607688</updated>
+    </task>
+    <task id="LOCAL-00042" summary="docs: add docstrings to client, chat, user, message and handlers">
+      <option name="closed" value="true" />
+      <created>1699024158226</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1699024158226</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: rename patch -&gt; patch_into" />
+    <MESSAGE value="style: format with ruff" />
+    <MESSAGE value="chore: remaking many changes that got undone after the merge" />
+    <MESSAGE value="fix: replace @should_patch -&gt; @should_patch()" />
+    <MESSAGE value="fix: use Dict and List from typing instead of builtin" />
+    <MESSAGE value="fix: use Tuple from typing instead of builtin" />
+    <MESSAGE value="hotfix: use Tuple from typing instead of builtin" />
+    <MESSAGE value="hotfix: removing logging in pyromod.utils.patch" />
+    <MESSAGE value="hotfix: fix CallbackQueryHandler searching for Message listeners" />
+    <MESSAGE value="docs: mention site docs on readme" />
+    <MESSAGE value="chore: bump version to 3.0.2" />
+    <MESSAGE value="chore: kill poetry, use rye" />
+    <MESSAGE value="feat: implement register_next_step_handler with execution of the registered callback" />
+    <MESSAGE value="feat: accept lists as chat_id, user_id, message_id and inline_message_id on listen, ask and wait_for_click" />
+    <MESSAGE value="feat: accept usernames as chat_id and user_id on listen, ask and wait_for_click" />
+    <MESSAGE value="feat!: make stop_listening async and create stop_listener" />
+    <MESSAGE value="docs: bump year on copyright" />
+    <MESSAGE value="hotfix: fix syntax error" />
+    <MESSAGE value="hotfix: fix login of lists in identifiers, fix call to remove_listener on future done" />
+    <MESSAGE value="feat: add startup logs" />
+    <MESSAGE value="docs: mention twice the telegram group in readme" />
+    <MESSAGE value="feat: make register_next_step_handler support lists" />
+    <MESSAGE value="fix: make pattern lead the match with the listeners in get_matching_listener and get_many_matching_listeners" />
+    <MESSAGE value="fix: split logic of get_matching_listener into get_listener_matching_with_data and get_listener_matching_with_identifier_pattern" />
+    <MESSAGE value="docs: add docstrings to client, chat, user, message and handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add docstrings to client, chat, user, message and handlers" />
+  </component>
+</project>
