@@ -1,11 +1,11 @@
-import pyrogram
+import cybergram
 
 from .client import Client
 from ..utils import patch_into, should_patch
 
 
-@patch_into(pyrogram.types.user_and_chats.user.User)
-class User(pyrogram.types.user_and_chats.user.User):
+@patch_into(cybergram.types.user_and_chats.user.User)
+class User(cybergram.types.user_and_chats.user.User):
     _client: Client
 
     @should_patch()

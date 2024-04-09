@@ -1,7 +1,7 @@
 # Changelog from cybermod v2 to v3
 """
-- The classes Client, Message, Chat and User now inherit from their respective classes in Pyrogram. This mean you can use them as if they were the original classes from Pyrogram. This is super useful for the IDEs to provide code completion and type checking of the cybermod features.
-- Since we can now use cybermod's Client just like the original Client, there is a new way of initilizing cybermod. Before, you needed to import cybermod anywhere in your code before importing pyrogram. Now you can simply import Client from cybermod instead of pyrogram and you are good to go.
+- The classes Client, Message, Chat and User now inherit from their respective classes in cybergram. This mean you can use them as if they were the original classes from cybergram. This is super useful for the IDEs to provide code completion and type checking of the cybermod features.
+- Since we can now use cybermod's Client just like the original Client, there is a new way of initilizing cybermod. Before, you needed to import cybermod anywhere in your code before importing cybergram. Now you can simply import Client from cybermod instead of cybergram and you are good to go.
 - The decorators patch and patchable have been renamed to patch_into and should_patch respectively, making them more descriptive.
 - The tuple identifiers that divided opinions have been removed. Now you can specify the data directly to the listen and ask methods as keyword arguments.
 - Added support for inline_message_id in the listen and ask methods.
@@ -12,11 +12,11 @@
 - The whole code got type hints. This means that the IDEs can now provide code completion and type checking of the cybermod features.
 - The classes Client, Chat, User, Message, MessageHandler and CallbackQueryHAndler, that were previously in the listen.py file were split into their own files into the listen subpackage.
 - The classes ListenerStopped and ListenerTimeout, that were previously in the listen.py file were moved to the exceptions subpackage.
-- The class PyrogramConfig, that was previously in the utils.py file was moved to the config subpackage. It's now called config and it's a SimpleNamespace object instead of a class.
+- The class cybergramConfig, that was previously in the utils.py file was moved to the config subpackage. It's now called config and it's a SimpleNamespace object instead of a class.
 - The enum ListenerTypes, that was previously in the listen.py file was moved to the types subpackage.
 - Now the ask method will only send a message if the specified text is not empty. Thanks for that, @Eikosa!
 - The attribute request of the Message object returned by the ask method has been renamed to sent_message, much more descriptive. Thanks again, @Eikosa!
-- @tofikdn has added support for Message.message_id, when available, like in Pyrogram v1. Thanks for that!
+- @tofikdn has added support for Message.message_id, when available, like in cybergram v1. Thanks for that!
 - @Jusidama-Bot made a huge contribution to the project, making the monkeypatching utils so much more powerful. Awesome!
 - @WhaleFell made cybermod ensure that the from_user is not null before trying to get its id, fixing an annoying frequent error. Well done!
 - The project structure has been completely refactored. Now it's more organized and a lot easier to maintain.
@@ -39,7 +39,7 @@ Now it has the following structure:
 cybermod/
 ├── __init__.py
 ├── config
-│  └── __init__.py (contains the config object, formerly PyrogramConfig)
+│  └── __init__.py (contains the config object, formerly cybergramConfig)
 ├── exceptions
 │  ├── __init__.py
 │  ├── listener_stopped.py

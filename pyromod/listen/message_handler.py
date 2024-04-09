@@ -1,17 +1,17 @@
 from inspect import iscoroutinefunction
 from typing import Callable
 
-import pyrogram
-from pyrogram.filters import Filter
-from pyrogram.types import Message
+import cybergram
+from cybergram.filters import Filter
+from cybergram.types import Message
 
 from .client import Client
 from ..types import ListenerTypes, Identifier
 from ..utils import should_patch, patch_into
 
 
-@patch_into(pyrogram.handlers.message_handler.MessageHandler)
-class MessageHandler(pyrogram.handlers.message_handler.MessageHandler):
+@patch_into(cybergram.handlers.message_handler.MessageHandler)
+class MessageHandler(cybergram.handlers.message_handler.MessageHandler):
     filters: Filter
     old__init__: Callable
 
@@ -84,14 +84,14 @@ class MessageHandler(pyrogram.handlers.message_handler.MessageHandler):
             if listener.future and not listener.future.done():
                 listener.future.set_result(message)
 
-                raise pyrogram.StopPropagation
+                raise cybergram.StopPropagation
             elif listener.callback:
                 if iscoroutinefunction(listener.callback):
                     await listener.callback(client, message, *args)
                 else:
                     listener.callback(client, message, *args)
 
-                raise pyrogram.StopPropagation
+                raise cybergram.StopPropagation
             else:
                 raise ValueError("Listener must have either a future or a callback")
         else:

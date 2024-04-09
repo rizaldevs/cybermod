@@ -18,4 +18,4 @@ Or rye:
 rye add cybermod
 ```
 
-!> cybermod requires pyrogram to be installed, since it's a plugin that only does monkeypatching, rather than a standalone fork of pyrogram.
+!> cybermod requires cybergram to be installed, since it's a plugin that only does monkeypatching, rather than a standalone fork of cybergram.

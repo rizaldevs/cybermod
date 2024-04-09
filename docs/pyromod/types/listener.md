@@ -12,7 +12,7 @@ and filters that trigger these listeners.
 - **future** (*asyncio.Future*) – A `Future` object representing the asynchronous task that waits for the event. When
   the event occurs, the `Future` will be resolved, and the listener will be able to proceed.
 
-- **filters** (*pyrogram.filters.Filter*) – A filter to check the incoming event against. The listener will only be
+- **filters** (*cybergram.filters.Filter*) – A filter to check the incoming event against. The listener will only be
   triggered when the event matches the provided filter.
 
 - **unallowed_click_alert** (*bool*) – A flag that determines whether to send an alert if a button click event doesn't

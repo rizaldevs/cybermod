@@ -2,8 +2,8 @@ import asyncio
 from inspect import iscoroutinefunction
 from typing import Optional, Callable, Dict, List, Union
 
-import pyrogram
-from pyrogram.filters import Filter
+import cybergram
+from cybergram.filters import Filter
 
 from ..config import config
 from ..exceptions import ListenerTimeout, ListenerStopped
@@ -12,12 +12,12 @@ from ..utils import should_patch, patch_into
 
 if not config.disable_startup_logs:
     print(
-        "Pyromod is working! If you like cybermod, please star it at https://github.com/usernein/cybermod"
+        "Pyromod is working! If you like cybermod, please star it at https://github.com/rizaldevs/cybermod"
     )
 
 
-@patch_into(pyrogram.client.Client)
-class Client(pyrogram.client.Client):
+@patch_into(cybergram.client.Client)
+class Client(cybergram.client.Client):
     listeners: Dict[ListenerTypes, List[Listener]]
     old__init__: Callable
 

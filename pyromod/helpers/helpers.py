@@ -1,4 +1,4 @@
-from pyrogram.types import (
+from cybergram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     KeyboardButton,

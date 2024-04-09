@@ -1,19 +1,19 @@
 # cybermod
 
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/cybermodchat)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/usernein/cybermod)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/rizaldevs/cybermod)
 [![Downloads](https://static.pepy.tech/badge/cybermod)](https://pepy.tech/project/cybermod)
 [![Downloads](https://static.pepy.tech/badge/cybermod/month)](https://pepy.tech/project/cybermod)
 
-cybermod is a versatile Python add-on for the Pyrogram library, designed to make developing Telegram bots faster and more
+cybermod is a versatile Python add-on for the cybergram library, designed to make developing Telegram bots faster and more
 efficient.
 
-It's based on **monkeypatching**, which means it works together with Pyrogram, rather than being a fork or modified
+It's based on **monkeypatching**, which means it works together with cybergram, rather than being a fork or modified
 version. It
-adds features to Pyrogram classes on the go, so you don't need to update it every time Pyrogram is updated.
+adds features to cybergram classes on the go, so you don't need to update it every time cybergram is updated.
 
 Whether you're building a simple chatbot or a complex form to get multiple responses from the user, cybermod has you
-covered. It enhances Pyrogram with a range
+covered. It enhances cybergram with a range
 of advanced features, simplifies conversation handling, and offers a high degree of customizability.
 
 ## Key Features

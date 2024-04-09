@@ -1,12 +1,12 @@
 [project]
 name = "cybermod"
 version = "5.4.1"
-description = "A monkeypatcher add-on for Pyrogram that does conversation handling"
+description = "A monkeypatcher add-on for cybergram that does conversation handling"
 authors = [
-    { name = "Pauxis", email = "pauxiscezar@gmail.com" }
+    { name = "rizaldevs", email = "rizaldaitona@gmail.com" }
 ]
 dependencies = [
-    "pyrogram >= 1.0"
+    "cybergram >= 1.0"
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
